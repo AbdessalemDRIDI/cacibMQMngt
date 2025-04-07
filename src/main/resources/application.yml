@@ -1,0 +1,16 @@
+spring:
+  jms:
+    listener:
+      simple:
+        concurrency: 3  # The number of consumers to read messages concurrently
+    default-destination: "YOUR_QUEUE_NAME"
+
+ibm:
+  mq:
+    host: "localhost"
+    port: 1414  # Default MQ port
+    queue-manager: "MQ_MNG"
+    channel: "MQ_channel"
+    queue-name: "MQ_MSG"
+    user: "admin"
+    password: "admin"
